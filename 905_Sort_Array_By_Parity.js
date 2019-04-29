@@ -17,7 +17,6 @@ var sortArrayByParity = function(A) {
             even.push(a);
         }
     })
-    console.log(even.concat(odd));
 };
 
 sortArrayByParity(A);

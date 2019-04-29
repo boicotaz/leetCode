@@ -43,9 +43,3 @@ var uniquePaths = function(m, n) {
 
 
 }
-
-
-
-
-console.log(uniquePaths(3,6));
-// console.log(store[5])

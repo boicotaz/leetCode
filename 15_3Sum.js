@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -16,8 +14,7 @@ var threeSum = function(nums) {
         if(nums[k] > 0) break;
         let start = k + 1;
         let end = nums.length -1 ;
-        while (start < end && start <= nums.length -1 && end >=0 ){
-            
+        while (start < end ){ 
             if( nums[k]+ nums[start] + nums[end] == 0){
                 res.push([nums[k], nums[start],nums[end]]);
                 let temp = start +1;
@@ -41,21 +38,3 @@ var threeSum = function(nums) {
     }
   return res;
 };
-
-
-// binarySear
-let nums = [-1,0,1,2,-1,-4];
-
-console.log(threeSum(nums));
-
-
-            // for (let j = nums.length -1 ; j > i ; j--){
-            //     // if(j < nums.length -1 && nums[j] == nums[j-1]) continue;
-            //     if( nums[k]+ nums[i] + nums[j] == 0){
-            //         // console.log(nums[k],nums[i],nums[j]);
-            //             res.push([nums[k] , nums[i],nums[j]]);
-            //             break;
-
-            //     }
-
-            // }
